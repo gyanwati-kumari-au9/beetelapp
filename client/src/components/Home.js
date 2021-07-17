@@ -38,28 +38,28 @@ class Home extends Component {
             <div className="hero-text">
               <h1>Welcome To Beetlehunt</h1>
             </div>
-          <div className="main-add-user" style={{marginTop:"-100px"}}>
+          <div className="main-add-user" style={{marginTop:"-100px",backgroundColor:"white"}}>
           <form className="add-user" style={{height:"300px"}}>
             <h2 className="text-center" style={{fontSize:"22px"}}>Please fill the form to get your result</h2>
             <span className="badge bg-dark mt-4">{this.state.text}</span>
-            <div className="add-user-div">
-              <label>Enter mobile number:</label>
+            <div className="add-user-div" style={{textAlign:"center"}}>
+              <label>Enter mobile number:</label><br/>
               <input type="text" name="username" onChange={this.onChange} />
             </div>
-            <div className="add-user-div">
-              <label>Enter pin number:</label>
+            <div className="add-user-div" style={{textAlign:"center"}}>
+              <label>Enter pin number:</label><br/>
               <input
                 type="pin"
                 id="pin"
                 name="pin"
                 onChange={this.onChange}
               />
-            </div>
+            </div><br/>
         
             <button
               onClick={this.register}
               type="button"
-              className="add-user-button"
+              className="add-user-button" style={{marginLeft:"42%",padding:"3px",width:"160px",backgroundColor:"#469A2D",color:"white"}}
             >
               Find
             </button>
