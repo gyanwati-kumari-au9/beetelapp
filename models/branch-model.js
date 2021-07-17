@@ -6,7 +6,7 @@ const branchSchema = new Schema({
     branchName: String,
     address: String,
     city: String,
-    contactNumber: Number,
+    contactNumber: String,
     branchIncharge: String,
     pinCode:Array,
  
