@@ -7,13 +7,3 @@ export { default as AddUser } from "./AddUser";
 export { default as Login } from "./User/Login";
 export { default as Profile } from "./User/Profile";
 
-// Marketplace
-export { default as Market } from "./Marketplace/Market";
-export { default as AddProduct } from "./Marketplace/AddProduct";
-export { default as ProductPage } from "./Marketplace/ProductPage";
-export { default as Cart } from "./Marketplace/Cart";
-export { default as Orders } from "./Marketplace/UserOrders";
-export { default as AllProducts } from "./Dashboard/Admin/AllProducts";
-
-// Live Chat (Socket)
-export { default as Chat } from "./Livechat/Chat/Chat";

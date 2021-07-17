@@ -54,29 +54,4 @@ module.exports = (router) => {
     }
   );
 
-  // // AUTH WITH GOOGLE
-  // router.get(
-  //   "/auth/google",
-  //   passport.authenticate("google", { scope: ["profile", "email"] })
-  // );
-  // // callback route for google to redirect to
-  // router.get(
-  //   "/auth/google/redirect",
-  //   passport.authenticate("google"),
-  //   (req, res) => {
-  //     res.redirect(keys.CLIENT_HOME_PAGE_URL);
-  //   }
-  // );
-
-  // // AUTH WITH FACEBOOK
-  // router.get("/auth/facebook", passport.authenticate("facebook"));
-
-  // callback route for facebook to redirect to
-//   router.get(
-//     "/auth/facebook/redirect",
-//     passport.authenticate("facebook", {
-//       successRedirect: keys.CLIENT_HOME_PAGE_URL,
-//       failureRedirect: keys.CLIENT_HOME_PAGE_URL,
-//     })
-//   );
-// };
+};

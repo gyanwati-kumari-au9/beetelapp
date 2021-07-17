@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Redirect, Link } from "react-router-dom";
 import * as USER from "../../api/apiActions";
-import EditPopover from "../../Popover/EditPopover";
+import EditPopover from "../../EditPopover";
 import DeleteIcon from "@material-ui/icons/Delete";
 
 class Users extends Component {

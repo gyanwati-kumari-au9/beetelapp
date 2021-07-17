@@ -18,13 +18,7 @@ const Navbar = (props) => {
 
           {props.auth.isAuth ? (
             <div className="dropdown">
-              <Link
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src={IMG.profile} alt="cart" />
-              </Link>
+              */}
               <ul
                 className="dropdown-menu"
                 aria-labelledby="dropdownMenuButton1"
@@ -37,24 +31,7 @@ const Navbar = (props) => {
                     My Profile
                   </Link>
                 </li>
-                <li>
-                  <Link className="dropdown-item" to="/orders">
-                    My Purchase
-                  </Link>
-                </li>
-
-                <li>
-                  <Link className="dropdown-item" to="/add-product">
-                    Add Product
-                  </Link>
-                </li>
-                {props.auth.user.role === "Admin" ? (
-                  <li>
-                    <Link className="dropdown-item" to="/addUser">
-                      Add User
-                    </Link>
-                  </li>
-                ) : null}
+                
                 <li>
                   <Link className="dropdown-item" to="/dashboard">
                     Dashboard

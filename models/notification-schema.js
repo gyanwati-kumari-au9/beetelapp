@@ -2,18 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const notificationSchema = new Schema({
-  productImage: Array,
-  productName: String,
-  productPrice: String,
-  productRating: String,
-  productDescription: String,
-  productCategory: String,
-  productInStock: Boolean,
-  totalItem: Number,
-  dateOfListing: Object,
-  userId: String,
-  userName: String,
-  cartId: String,
+  pincode: String,
+  contact: String,
+  createdAt: Date
 });
 
 module.exports = mongoose.model("notification", notificationSchema);

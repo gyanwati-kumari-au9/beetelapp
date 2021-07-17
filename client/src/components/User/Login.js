@@ -57,10 +57,10 @@ class Login extends Component {
               <div className="form-group">
                 <label>{this.state.text}</label>
                 <input
-                  type="email"
+                  type="text"
                   className="form-control"
                   id="email"
-                  placeholder="Email"
+                  placeholder="Username"
                   name="email"
                   onChange={this.onChange}
                 />
@@ -74,41 +74,12 @@ class Login extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              {/* <div className="forgot">
-                <Link to="/account/reset">Forgot your password?</Link>
-              </div> */}
 
               <div className="login-button">
                 <button onClick={this.login} type="button">
                   Login
                 </button>
               </div>
-
-              {/* <div className="social-login">
-                <div className="line">
-                  <h6>Or</h6>
-                </div>
-
-                <a href="/auth/google">
-                  <img
-                    src={icon.google}
-                    className="img-thumbnail"
-                    alt="google"
-                  />
-                </a>
-                <a href="/auth/facebook">
-                  <img
-                    src={icon.facebook}
-                    className="img-thumbnail"
-                    alt="facebook"
-                  />
-                </a>
-              </div> */}
-              {/* <div className="checkbox">
-                <label>
-                  Don't have an account? <Link to="/signup">Signup</Link>
-                </label>
-              </div> */}
             </form>
           </div>
         </div>

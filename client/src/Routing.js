@@ -5,13 +5,7 @@ import { connect } from "react-redux";
 import * as API from "./components/api/apiActions";
 
 class Routing extends Component {
-  viewCart = async (id) => {
-    if (this.props.auth.isAuth) {
-      const cart = await API.findCartByID(id.substring(0, 10));
-      if (cart.length !== 0)
-        this.props.dispatch({ type: "CART", payload: { cart } });
-    }
-  };
+ 
   async componentDidMount() {
     const { token, user, success } = await API.checkLogin();
     if (success) {
@@ -22,15 +16,7 @@ class Routing extends Component {
       await this.viewCart(user._id);
     }
 
-    // this.setState({
-    //   check,
-    // });
-    // if (this.props.auth.isAuth) {
-    //   const cart = await API.findCartByID(
-    //     this.props.auth.user._id.substring(0, 10)
-    //   );
-    //   if (cart) this.props.dispatch({ type: "CART", payload: { cart } });
-    // }
+   
   }
   render() {
     return (
@@ -50,16 +36,6 @@ class Routing extends Component {
             />
             <Route path="/login" component={Layout.Login} />
             <Route path="/user/:id" component={Layout.Profile} />
-            {/* <Route path="/login" component={Layout.Signup} /> */}
-
-            <Route path="/market/:name" component={Layout.Market} />
-            <Route path="/add-product" component={Layout.AddProduct} />
-            <Route path="/product/:name" component={Layout.ProductPage} />
-            <Route path="/cart" component={Layout.Cart} />
-            <Route path="/orders" component={Layout.Orders} />
-            <Route path="/all-products" component={Layout.AllProducts} />
-
-            <Route path="/support/chat" component={Layout.Chat} />
           </Switch>
         </Router>
         <Layout.Footer />
